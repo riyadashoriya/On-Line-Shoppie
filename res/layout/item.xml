@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/ScrollView01"  
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:layout_gravity="center_vertical" >  
+
+<TableLayout 
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+   <TableRow 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        
+        android:background="#FFFFFF"
+        android:layout_width="0dp"
+    android:id="@+id/button1"
+        android:onClick="onClick1" 
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/A1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="onClick2"   
+  
+    android:background="#FFFFFF"
+  
+        android:layout_height="wrap_content"
+        android:text="@string/A2" />
+
+    </TableRow>
+    
+    
+     	<Button
+		    android:id="@+id/electronics_value"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/electronics"
+		android:onClick="onClick7" />
+		<Button
+		    android:id="@+id/books_value"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/books"
+		android:onClick="onClick8" />
+			<Button
+		    android:id="@+id/vehicles"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/vehicles"
+		android:onClick="onClick9" />
+		<Button
+		    android:id="@+id/other_items"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/otheritems"
+		android:onClick="onClick10" />
+	
+		
+	
+   </TableLayout> 
+    
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">On-Line Shoppie</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="A2">Customer account</string>
+    <string name="A1">Items</string>
+    <string name="nameuser">Username:</string>
+    <string name="picupload">Upload a photo of item</string>
+    <string name="pwd">Password:</string>
+    <string name="rempwd">Remember Password</string>
+    <string name="in">Log In</string>
+    <string name="logot">Do you want to logout?</string>
+    <string name="usrnew">Registeration for new users</string>
+    <string name="uplog">Sign Up</string>
+    <string name="signup_name">Name:</string>
+    <string name="signup_username">Username:</string>
+    <string name="signup_password">Password:</string>
+    <string name="signup_retype_password">ReType Password:</string>
+    <string name="signup_address">Address:</string>
+    <string name="signup_phonenumber">Phone Number:</string>
+    <string name="signup_agree">Agree Terms &amp; Conditions</string>
+    <string name="signup_create_account">Create Account</string>
+    <string name="signup_facebook">SignUp With FaceBook Account</string>
+    <string name="signup_or">OR</string>
+    <string name="signup_email">Email Address:</string>
+    <string name="txt_user"></string>
+    <string name="A3">database</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="otheritems">Other Items</string>
+    <string name="electronics">Electronics</string>
+    <string name="books">Books</string>
+    <string name="welcomeback">Hello!! Welcome to Your Profile</string>
+    <string name="addnewitems">Do you want to put something on sale!</string>
+    <string name="clickhere">Click Here!!</string>
+    <string name="nameofitem">Name of Item:</string>
+	<string name="category">Select Category:</string>
+	<string name="item_description">Description:</string>
+	<string name="contact_info">Contact Information</string>
+	<string name="Nameofperson">Name of Seller:</string>
+	<string name="emailid">Email id of Seller:</string>
+	<string name="Phone_number">Phone Number:</string>
+	<string name="are_you_sure">Is the information correct?</string>
+	<string name="goback">Click Here!</string>
+	<string name="app_id">yQriQzUQTcWwnuWQGF7SnRej410=</string>
+		<string name="go_to_your_account">To go back to your account,</string>
+	<string name="submit">Submit</string>
+	<string-array name="list">
+	    <item>Electronics</item>
+	    <item>Books</item>
+	    <item>Vehicles</item>
+	    <item>Other</item>
+	</string-array>
+	<string name="logout">Logout</string>
+	<string name="splashscreen">Welcome to On-Line Shoppie</string>
+
+</resources>
