@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import com.parse.ParseUser;
 
-//import android.widget.EditText;
-
 public class Login extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +18,11 @@ public class Login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         ParseUser currentUser = ParseUser.getCurrentUser();
-        // String struser = currentUser.getUsername().toString();
-        //TextView txtuser = (TextView)findViewById(R.id.nameprint);
-        //txtuser.setText("You are logged in as " + struser);
-        //final ParseUser user=new ParseUser();
-        // ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser == null) {
             Intent intent = new Intent(this, User.class);
             startActivity(intent);
             finish();
         } else {
-            //final ParseUser user=new ParseUser();
-            // if (user.getBoolean("emailVerified") )
-            //{
             String struser = currentUser.getUsername().toString();
             TextView txtuser = (TextView) findViewById(R.id.nameprint);
             txtuser.setText("You are logged in as " + struser);

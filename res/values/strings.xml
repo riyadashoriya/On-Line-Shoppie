@@ -35,24 +35,24 @@
     <string name="addnewitems">Do you want to put something on sale!</string>
     <string name="clickhere">Click Here!!</string>
     <string name="nameofitem">Name of Item:</string>
-	<string name="category">Select Category:</string>
-	<string name="item_description">Description:</string>
-	<string name="contact_info">Contact Information</string>
-	<string name="Nameofperson">Name of Seller:</string>
-	<string name="emailid">Email id of Seller:</string>
-	<string name="Phone_number">Phone Number:</string>
-	<string name="are_you_sure">Is the information correct?</string>
-	<string name="goback">Click Here!</string>
-	<string name="app_id">yQriQzUQTcWwnuWQGF7SnRej410=</string>
-		<string name="go_to_your_account">To go back to your account,</string>
-	<string name="submit">Submit</string>
-	<string-array name="list">
-	    <item>Electronics</item>
-	    <item>Books</item>
-	    <item>Vehicles</item>
-	    <item>Other</item>
-	</string-array>
-	<string name="logout">Logout</string>
-	<string name="splashscreen">Welcome to On-Line Shoppie</string>
+    <string name="category">Select Category:</string>
+    <string name="item_description">Description:</string>
+    <string name="contact_info">Contact Information</string>
+    <string name="Nameofperson">Name of Seller:</string>
+    <string name="emailid">Email id of Seller:</string>
+    <string name="Phone_number">Phone Number:</string>
+    <string name="are_you_sure">Is the information correct?</string>
+    <string name="goback">Click Here!</string>
+    <string name="app_id">yQriQzUQTcWwnuWQGF7SnRej410=</string>
+    <string name="go_to_your_account">To go back to your account,</string>
+    <string name="submit">Submit</string>
+    <string-array name="list">
+        <item>Electronics</item>
+        <item>Books</item>
+        <item>Vehicles</item>
+        <item>Other</item>
+    </string-array>
+    <string name="logout">Logout</string>
+    <string name="splashscreen">Welcome to On-Line Shoppie</string>
 
 </resources>

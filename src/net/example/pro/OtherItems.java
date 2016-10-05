@@ -21,18 +21,6 @@ import com.parse.ParseQuery;
 
 import java.util.List;
 
-//import android.content.Intent;
-//import com.parse.ParseQuery;
-//import java.util.ArrayList;
-//import com.parse.ParseQuery;
-//import android.app.Activity;
-//import android.os.Bundle;
-//import android.app.Activity;
-//import android.os.Bundle;
-//import android.widget.Spinner;
-//import com.parse.ParseQuery;  
-
-
 public class OtherItems extends Activity {
 
     //Initialize objects
@@ -46,12 +34,7 @@ public class OtherItems extends Activity {
         super.onCreate(savedInstanceState);
         Parse.initialize(this, "Dz3FMHXFQ0XzRS98PGv4TmAjDLasPvohYpQRhPzH", "fRjyTWPlYLuAbPIaO46plxiSy5JHErPHUrklE5vS");
         ParseAnalytics.trackAppOpened(getIntent());
-
-
         setContentView(R.layout.listview_main);
-        //Spinner spin=new Spinner(getApplicationContext());
-        //spin.setId(1);
-        // Execute RemoteDataTask AsyncTask
         new RemoteDataTask().execute();
     }
 
@@ -59,11 +42,8 @@ public class OtherItems extends Activity {
     private class RemoteDataTask extends AsyncTask<Void, Void, Void> {
 
         protected Void doInBackground(Void... params) {
-            // Locate the class table named "Country" in Parse.com
-            //  ParseObject testObj1 = new ParseObject("TesOb3");
-
+            // Locate the class table named "TesObo" in Parse.com
             ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("TesObo");
-            // Spinner spin=new Spinner(getApplicationContext());
 
             {
                 query.orderByDescending("_created_at");
@@ -81,23 +61,15 @@ public class OtherItems extends Activity {
         //Get values from database to show the results
         @Override
         protected void onPostExecute(Void result) {
-            //int[] list = null;
-            //int[] list2 = list;
-            //for(R.array.list = list2[Electronics];;)
-            //{
-            // Locate the listview in listview_main.xml
-
 
             listview = (ListView) findViewById(R.id.listview); //listview
             // Pass the results into an ArrayAdapter
             adapter = new ArrayAdapter<String>(OtherItems.this, R.layout.listview_item);
-            // int index;
             // Retrieve object "name" from Parse.com database
             for (ParseObject ItemName : ob) {
                 adapter.add((String) ItemName.get("ItemName"));
             }             // Binds the Adapter to the ListView
             listview.setAdapter(adapter);             // Close the progressdialog
-            // mProgressDialog.dismiss();
             // Capture button clicks on ListView items
             listview.setOnItemClickListener(new OnItemClickListener() {
                 @Override
@@ -122,8 +94,6 @@ public class OtherItems extends Activity {
                     startActivity(i);
                 }
             });
-
-            //  mProgressDialog.dismiss();
 
         }
     }

@@ -21,21 +21,6 @@ import com.parse.ParseQuery;
 
 import java.util.List;
 
-//import android.widget.EditText;
-//import com.parse.ParseUser;
-//import android.app.Activity;
-//import android.content.Intent;
-//import android.os.Bundle;
-//import com.parse.ParseQuery;
-//import java.util.ArrayList;
-//import com.parse.ParseQuery;
-//import android.app.Activity;
-//import android.os.Bundle;
-//import android.app.Activity;
-//import android.os.Bundle;
-//import android.widget.Spinner;
-//import com.parse.ParseQuery;  
-
 
 public class Electronics extends Activity {
 
@@ -53,9 +38,6 @@ public class Electronics extends Activity {
 
 
         setContentView(R.layout.listview_main);
-        //Spinner spin=new Spinner(getApplicationContext());
-        //spin.setId(1);
-        // Execute RemoteDataTask AsyncTask
         new RemoteDataTask().execute();
 
     }
@@ -65,11 +47,8 @@ public class Electronics extends Activity {
 
 
         protected Void doInBackground(Void... params) {
-            // Locate the class table named "Country" in Parse.com
-            //  ParseObject testObj1 = new ParseObject("TesOb3");
-
+            // Locate the class table named "TestObe" in Parse.com
             ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("TesObe");
-            // Spinner spin=new Spinner(getApplicationContext());
 
             {
                 query.orderByDescending("_created_at");
@@ -87,23 +66,15 @@ public class Electronics extends Activity {
         //Get values from database to show the results
         @Override
         protected void onPostExecute(Void result) {
-            //int[] list = null;
-            //int[] list2 = list;
-            //for(R.array.list = list2[Electronics];;)
-            //{
-            // Locate the listview in listview_main.xml
-
 
             listview = (ListView) findViewById(R.id.listview); //listview
             // Pass the results into an ArrayAdapter
             adapter = new ArrayAdapter<String>(Electronics.this, R.layout.listview_item);
-            // int index;
             // Retrieve object "name" from Parse.com database
             for (ParseObject ItemName : ob) {
                 adapter.add((String) ItemName.get("ItemName"));
             }             // Binds the Adapter to the ListView
             listview.setAdapter(adapter);             // Close the progressdialog
-            // mProgressDialog.dismiss();
             // Capture button clicks on ListView items
             listview.setOnItemClickListener(new OnItemClickListener() {
                 @Override
@@ -128,8 +99,6 @@ public class Electronics extends Activity {
                     startActivity(i);
                 }
             });
-
-            //  mProgressDialog.dismiss();
 
         }
     }

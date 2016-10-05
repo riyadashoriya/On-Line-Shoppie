@@ -18,10 +18,6 @@ import com.parse.ParseUser;
 
 import java.util.regex.Pattern;
 
-//import android.graphics.Bitmap;
-//import android.widget.Button;
-//import android.widget.TextView;
-
 public class AddItems extends Activity {
     //Regex expressions for security purpose of input fields
     final Pattern EMAIL_ADDRESS_PATTERN = Pattern.compile(
@@ -119,7 +115,6 @@ public class AddItems extends Activity {
                                     String m = "Electronics";
                                     String n = "Vehicles";
                                     String o = "Other";
-                                    //String p="Books";
                                     if (list[index].matches(m)) {
 
                                         testObj1 = new ParseObject("TesObe");

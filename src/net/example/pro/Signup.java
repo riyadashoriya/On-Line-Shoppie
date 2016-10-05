@@ -17,17 +17,6 @@ import com.parse.SignUpCallback;
 
 import java.util.regex.Pattern;
 
-//import com.parse.LogInCallback;
-//import com.parse.Parse;
-//import java.util.Arrays;
-//import java.util.List;
-//import com.parse.ParseFacebookUtils;
-//import com.parse.ParseObject;
-//import com.parse.SignUpCallback;
-//import com.parse.ParseUser;
-//import android.app.ProgressDialog;
-//import android.util.Log;
-
 public class Signup extends Activity {
 
     //Regex expressions for validation and sanitization
@@ -36,9 +25,11 @@ public class Signup extends Activity {
                     + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
 
     );
+
     final Pattern USERNAME_PATTERN = Pattern.compile(
             "^[A-Za-z0-9_-]{3,15}$"
     );
+
     final Pattern NAME_PATTERN = Pattern.compile(
             "[a-zA-Z ]{3,25}"
 
@@ -58,7 +49,6 @@ public class Signup extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Parse.initialize(this, "Dz3FMHXFQ0XzRS98PGv4TmAjDLasPvohYpQRhPzH", "fRjyTWPlYLuAbPIaO46plxiSy5JHErPHUrklE5vS");
-        //ParseFacebookUtils.initialize("yQriQzUQTcWwnuWQGF7SnRej410=");
         setContentView(R.layout.signup);
     }
 
@@ -79,10 +69,7 @@ public class Signup extends Activity {
     //Form for sign up, user enter value, after sanitization and validation, data is saved to database. User is created.
     public void onClick5(View v) throws ParseException {
 
-
         chk = (CheckBox) findViewById(R.id.signup_agree);
-
-
         aEdit = (EditText) findViewById(R.id.signup_name_value);
         final String a = aEdit.getText().toString();
         bEdit = (EditText) findViewById(R.id.signup_email);
@@ -100,7 +87,6 @@ public class Signup extends Activity {
         final int fl = f.length();
         final int a1 = a.length();
         final int c1 = c.length();
-        //final boolean emailVerifie;
 
         if (a.equals("") || b.equals("") || c.equals("") || d.equals("")
                 || e.equals("") || f.equals("")) {
@@ -122,13 +108,6 @@ public class Signup extends Activity {
                                     testObj1.put("Address", e);
                                     testObj1.put("PhoneNumber", f);
 
-								/*	try {
-                                        testObj1.save();
-										//finish();
-									}catch (ParseException e1) {
-										e1.printStackTrace();		
-									}
-								*/
                                     final ParseUser user = new ParseUser();
                                     user.setUsername(c);
                                     user.setPassword(d);
@@ -139,10 +118,8 @@ public class Signup extends Activity {
                                         public void done(ParseException e1) {
                                             if (e1 == null) {
 
-
                                                 try {
                                                     testObj1.save();
-
                                                     //finish();
                                                 } catch (ParseException e2) {
                                                     e2.printStackTrace();
@@ -157,8 +134,6 @@ public class Signup extends Activity {
                                                         Toast.LENGTH_LONG).show();
 
                                             } else {
-
-                                                // Intent i=new Intent(Signup.this, Signup.class);
 
                                                 switch (e1.getCode()) {
 
