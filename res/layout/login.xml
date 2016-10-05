@@ -2,80 +2,80 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_vertical"  >
-      <TextView
- android:layout_width="150dp"
-    android:layout_height="50dp" /> 
-     <TableRow
-          android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
+    android:layout_gravity="center_vertical">
 
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-      
-          <TextView 
-                      android:layout_width="match_parent"
-            android:layout_height="match_parent"
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
             android:id="@+id/nameprint"
-            />
-      </TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
 
- <TextView
- android:layout_width="150dp"
-    android:layout_height="50dp" /> 
-    
-<TableRow
-     android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
 
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-          <TextView
-            android:text="@string/addnewitems"
-          />
-     </TableRow>
-     <TableRow
-          android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-		    <Button 
-		        android:id="@+id/ClickHereForNew"
-		        android:text="@string/clickhere"
-		        android:onClick="onClick11"/>
-		</TableRow>
-      
-       <TextView
- android:layout_width="150dp"
-    android:layout_height="50dp" /> 
-    
-      
-<TableRow
-    
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
 
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center_horizontal">
-          <TextView
-            android:text="@string/logot"
-          />
-     </TableRow>
-       
-       
-       <TableRow
-           android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
+        <TextView android:text="@string/addnewitems" />
+    </TableRow>
 
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-	
-          
-          	    <Button 
-		        android:id="@+id/ClickHereLogout"
-		        android:text="@string/logout"
-		        android:onClick="onClick16"/>
-		</TableRow>
-      		
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/ClickHereForNew"
+            android:onClick="onClick11"
+            android:text="@string/clickhere" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+
+    <TableRow
+
+
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView android:text="@string/logot" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/ClickHereLogout"
+            android:onClick="onClick16"
+            android:text="@string/logout" />
+    </TableRow>
 
 
 </TableLayout>

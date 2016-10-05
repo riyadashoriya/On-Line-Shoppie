@@ -1,159 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
-    xmlns:tools="http://schemas.android.com/tools"   
-      
-    android:id="@+id/ScrollView01"  
-    android:layout_width="match_parent" 
-    android:layout_height="match_parent" 
-    android:layout_gravity="center_vertical" >  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
 
 
+    <TableLayout
 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
- <TableLayout 
-     
-       android:layout_width="fill_parent"   
-        android:layout_height="wrap_content" >      
-         
-        <TableRow>          
- 
-        <TextView       
-               
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp"
-   				android:text="@string/nameofitem" /> 
-         </TableRow>
-         
         <TableRow>
-         
-         <TextView       
-              android:id="@+id/item_name_value"     
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-    
-        
-        
-         <TableRow>
-         
-         <TextView       
-                
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-        
-        
-        
-        
-        
-        <TableRow>          
-        
-            <TextView       
-               
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp"
-   				android:text="@string/item_description" /> 
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nameofitem"
+                android:textSize="25sp" />
         </TableRow>
-        <TableRow>
-            
-         <TextView       
-              android:id="@+id/item_description_value"     
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
 
-         <TableRow>
-         
-         <TextView       
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="30sp" /> 
-    </TableRow>
         <TableRow>
-	    <TextView
-	        	android:text="@string/contact_info"
-	        	android:textSize="30sp"
-	        	android:includeFontPadding="false"
-	        	android:layout_marginRight="-90dp"/>
-	</TableRow>
-    
-    <TableRow>          
-        
-        <TextView       
-               
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp"
-   				android:text="@string/Nameofperson" /> 
-        
+
+            <TextView
+                android:id="@+id/item_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
         </TableRow>
+
+
         <TableRow>
-         <TextView       
-              android:id="@+id/signup_item_person_name"     
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-                  
-  <TableRow>
-         
-         <TextView       
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-    <TableRow>          
-         
-        <TextView       
-               
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp"
-   				android:text="@string/emailid" /> 
-        
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
         </TableRow>
+
+
         <TableRow>
-        
-        <TextView       
-              android:id="@+id/emailid_seller_value"     
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
- 
-         <TableRow>
-         
-         <TextView       
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-        
-    <TableRow>          
-         
-   
-        <TextView       
-               
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp"
-   				android:text="@string/Phone_number" /> 
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_description"
+                android:textSize="25sp" />
         </TableRow>
+
         <TableRow>
-         <TextView       
-              android:id="@+id/phone_number_seller_value"     
-              android:layout_width="wrap_content"   
-              android:layout_height="wrap_content"     
-          		android:textSize="25sp" /> 
-    </TableRow>
-      
-    
-    
-                      
-        </TableLayout>
-        </ScrollView>
+
+            <TextView
+                android:id="@+id/item_description_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginRight="-90dp"
+                android:includeFontPadding="false"
+                android:text="@string/contact_info"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Nameofperson"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/signup_item_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emailid"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/emailid_seller_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Phone_number"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/phone_number_seller_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

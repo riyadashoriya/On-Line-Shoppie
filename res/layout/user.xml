@@ -1,129 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ScrollView01"  
-    android:layout_width="match_parent" 
-    android:layout_height="match_parent"
-     android:layout_gravity="center_vertical" >  
-
-<TableLayout 
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" >
-     <TableRow 
+    android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
 
-    <Button
-        
-        android:background="#FFFFFF"
-        android:layout_width="0dp"
-    android:id="@+id/button1"
-        android:onClick="onClick1" 
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="@string/A1" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:onClick="onClick2"   
-  
-    android:background="#FFFFFF"
-  
-        android:layout_height="wrap_content"
-        android:text="@string/A2" />
-
-    </TableRow>
-    
-<TextView
- android:layout_width="match_parent"
-  android:layout_weight="1"
-    android:layout_height="wrap_content" /> 	
-   
-    <TableRow  android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-        <TextView 
-                  android:layout_weight="1"
-            android:text="@string/nameuser"
-          
-            />
-        <EditText 
-            android:id="@+id/signup_username_value"
-              
-            android:inputType="text"
-                  android:layout_weight="1"
-        
- android:layout_marginRight="50dp"
-            />
-        </TableRow>
         <TableRow
-             android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:onClick="onClick1"
+                android:text="@string/A1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="#FFFFFF"
+
+                android:onClick="onClick2"
+                android:text="@string/A2" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
             <TextView
-                  android:layout_weight="1"
-                android:text="@string/pwd"
+                android:layout_weight="1"
+                android:text="@string/nameuser"
+
                 />
-                <EditText
-                    android:id="@+id/signup_password_value"
-                  android:layout_weight="1"
-                    android:inputType="textPassword"
-          
- android:layout_marginRight="50dp"     
-  />
-            </TableRow>
-            <TableRow  android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/signup_username_value"
+
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/pwd" />
+
+            <EditText
+                android:id="@+id/signup_password_value"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
             <TextView />
+
             <CheckBox
                 android:id="@+id/chkRememberPassword"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/rempwd"
-                />
+                android:text="@string/rempwd" />
         </TableRow>
-		<TableRow
-		     android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-		    <Button 
-		        android:id="@+id/buttonSignIn"
-		        android:text="@string/in"
-		        android:onClick="onClick3"/>
-		</TableRow>
-		
-		<TextView
- android:layout_width="150dp"
-    android:layout_height="25dp" /> 	
-		<TableRow
-		     android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-		<TextView 
-		    android:id="@+id/newusr"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/usrnew" />	
-		</TableRow>
-		<TableRow 
-		     android:layout_height="wrap_content"  
-        android:layout_width="match_parent"  
-        android:gravity="center_horizontal" 
-        android:layout_gravity="center">
-		<Button
-		    android:id="@+id/neusr"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/uplog"
-		android:onClick="onClick4" />
-	</TableRow>
-</TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonSignIn"
+                android:onClick="onClick3"
+                android:text="@string/in" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/newusr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/usrnew" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/neusr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick4"
+                android:text="@string/uplog" />
+        </TableRow>
+    </TableLayout>
 </ScrollView>
