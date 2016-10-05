@@ -1,6 +1,6 @@
 # On-line-shoppie
 
-Android Application where you can put things on Sale!
+Android Application which can be used to put things on Sale!
 
 Eclipse - JAVA -XML - Parse (for database connectivity)
 
