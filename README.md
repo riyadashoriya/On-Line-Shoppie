@@ -1,4 +1,5 @@
 # On-line-shoppie
+Note: This is no longer supported (since 2015)
 
 Android Application which can be used to put things on Sale!
 
